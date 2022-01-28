@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>icones/folder.png</file>
+        <file>icones/pause.png</file>
+        <file>icones/play.png</file>
+        <file>icones/stop.png</file>
+        <file>icones/quit.png</file>
+        <file>icones/save.png</file>
+        <file>icones/view.png</file>
+        <file>icones/back.jpg</file>
+        <file>icones/add.png</file>
+        <file>icones/afficher.png</file>
+        <file>icones/delete.png</file>
+        <file>icones/exit.png</file>
+        <file>icones/stat.png</file>
+        <file>icones/update.png</file>
+        <file>icones/check.png</file>
+        <file>icones/close.png</file>
+        <file>icones/reference.png</file>
+        <file>icones/focus.png</file>
+        <file>icones/printer.png</file>
+        <file>icones/pdf.png</file>
+        <file>icones/export.png</file>
+        <file>icones/rotation.png</file>
+        <file>icones/hotel.png</file>
+        <file>ajout.png</file>
+        <file>myappico.ico</file>
+    </qresource>
+</RCC>

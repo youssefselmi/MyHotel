@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SecDialog</class>
+ <widget class="QDialog" name="SecDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>911</width>
+    <height>333</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>581</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>270</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/afficher.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delete_2">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>70</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/delete.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="search">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>70</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="update">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>230</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/update.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>110</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>150</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>190</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>230</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="tri">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>110</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>trier par capacite</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>30</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Numero</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>etat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>type</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="combo">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>30</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Csearch">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>30</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/focus.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pdf">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>270</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/pdf.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="print">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>270</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/printer.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="video">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>70</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>videos </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>270</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/stat.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-4</x>
+     <y>-7</y>
+     <width>921</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/back.jpg);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>tableView</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>delete_2</zorder>
+  <zorder>search</zorder>
+  <zorder>update</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>lineEdit_2</zorder>
+  <zorder>lineEdit_3</zorder>
+  <zorder>lineEdit_4</zorder>
+  <zorder>tri</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>combo</zorder>
+  <zorder>Csearch</zorder>
+  <zorder>pdf</zorder>
+  <zorder>print</zorder>
+  <zorder>video</zorder>
+  <zorder>pushButton_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

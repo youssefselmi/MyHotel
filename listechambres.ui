@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ListeChambres</class>
+ <widget class="QDialog" name="ListeChambres">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>333</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableView" name="tableViewCH">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>30</y>
+     <width>601</width>
+     <height>211</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>280</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Confirmer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="afficherCH">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>280</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Afficher</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

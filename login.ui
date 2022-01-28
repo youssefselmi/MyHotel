@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login</class>
+ <widget class="QDialog" name="login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>632</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>180</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+padding: 1px;
+border-style: solid;
+border: 2px solid gray;
+border-radius: 8px;
+background-color: rgb(170, 150, 123);
+border:2px solid #000;
+}
+QPushButton {
+     color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #56739A;
+padding: 20px;
+border-radius: 5px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+ }
+ QPushButton:hover {
+     background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+ }</string>
+   </property>
+   <property name="text">
+    <string>connecter</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="id_edit">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>120</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="mdp_edit">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>150</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>120</y>
+     <width>47</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CIN:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>150</y>
+     <width>47</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MDP:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-10</y>
+     <width>641</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/back.jpg);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>340</y>
+     <width>631</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_mdp">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>150</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_3</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>id_edit</zorder>
+  <zorder>mdp_edit</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>check_mdp</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

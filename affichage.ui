@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Affichage</class>
+ <widget class="QDialog" name="Affichage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1071</width>
+    <height>469</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableView" name="tabdemande">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>631</width>
+     <height>281</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>400</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/afficher.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ref">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>70</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="quantite">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>110</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="type">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>150</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cin">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>190</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="etat">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>230</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="date">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>270</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="supprimer_demande">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>310</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/delete.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="modifier_demande">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>310</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/update.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>400</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/printer.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>400</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/pdf.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>30</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>TYPE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ETAT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CIN</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="recherche_demande">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>30</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/focus.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_recherche">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>30</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>310</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/check.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>310</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/close.png);
+background:none;
+border:none;
+background-repeat:none;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>70</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Trier etat</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>110</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Trier CIN</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-4</x>
+     <y>-7</y>
+     <width>1081</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/back.jpg);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tabdemande_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>220</y>
+     <width>631</width>
+     <height>281</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>310</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Trier CIN</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ref_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>270</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="quantite_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>310</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="date_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>470</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>600</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/pdf.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="etat_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>430</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="recherche_demande_2">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>230</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/focus.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_recherche_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>230</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_10">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>600</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/afficher.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="supprimer_demande_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>510</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/delete.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="modifier_demande_2">
+   <property name="geometry">
+    <rect>
+     <x>945</x>
+     <y>510</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/update.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_11">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>510</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/close.png);
+background:none;
+border:none;
+background-repeat:none;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_12">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>600</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/printer.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_13">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>270</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Trier etat</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_14">
+   <property name="geometry">
+    <rect>
+     <x>985</x>
+     <y>510</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:tranparent;
+border-image:url(:/images/icones/check.png);
+background:none;
+border:none;
+background-repeat:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cin_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>390</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="type_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>350</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>230</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>TYPE</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ETAT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CIN</string>
+    </property>
+   </item>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>tabdemande</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>ref</zorder>
+  <zorder>quantite</zorder>
+  <zorder>type</zorder>
+  <zorder>cin</zorder>
+  <zorder>etat</zorder>
+  <zorder>date</zorder>
+  <zorder>supprimer_demande</zorder>
+  <zorder>modifier_demande</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>recherche_demande</zorder>
+  <zorder>lineEdit_recherche</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>pushButton_5</zorder>
+  <zorder>pushButton_6</zorder>
+  <zorder>pushButton_7</zorder>
+  <zorder>tabdemande_2</zorder>
+  <zorder>pushButton_8</zorder>
+  <zorder>ref_2</zorder>
+  <zorder>quantite_2</zorder>
+  <zorder>date_2</zorder>
+  <zorder>pushButton_9</zorder>
+  <zorder>etat_2</zorder>
+  <zorder>recherche_demande_2</zorder>
+  <zorder>lineEdit_recherche_2</zorder>
+  <zorder>pushButton_10</zorder>
+  <zorder>supprimer_demande_2</zorder>
+  <zorder>modifier_demande_2</zorder>
+  <zorder>pushButton_11</zorder>
+  <zorder>pushButton_12</zorder>
+  <zorder>pushButton_13</zorder>
+  <zorder>pushButton_14</zorder>
+  <zorder>cin_2</zorder>
+  <zorder>type_2</zorder>
+  <zorder>comboBox_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
